@@ -1,0 +1,14 @@
+.logo {
+  margin: 0;
+  width: 258px;
+  height: 38px;
+  background-image: url(../../images/logo.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+@media screen and (max-width: 768px) {
+  .logo {
+    display: none;
+  }
+}

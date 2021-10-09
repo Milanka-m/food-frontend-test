@@ -1,0 +1,123 @@
+.elements__card {
+  text-decoration: none;
+  margin: 0;
+  min-width: 364px; 
+  height: 250px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #efeff4;
+  box-sizing: border-box;
+  padding-left: 10%;
+}
+
+.elements__card-image {
+  width: 50%;
+  object-fit: contain;
+}
+
+.elements__label {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 0.9vw;
+  width: 48%;
+  height: 100%;
+  padding: 2% 2% 5% 0;
+  box-sizing: border-box;
+}
+
+.elements__title {
+  font-size: 1.15vw;
+  font-weight: normal;
+  line-height: 1.25;
+  color: #666;
+  margin: 0;
+  padding-bottom: 3%;
+}
+
+.elements__subtitle {
+  font-size: .67vw;
+  font-weight: normal;
+  line-height: 1.2em;
+  color: #666;
+  margin: 0;
+}
+
+.elements__controls-price {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.elements__price {
+  width: 25%;
+  font-size: 1.5vw;
+  line-height: 1.25;
+  color: rgb(65, 65, 65);
+  margin: 0;
+}
+
+.elements__ruble-icon {
+  width: 25%;
+  margin-left: 4%;
+}
+
+.elements__button {
+  border-radius: 4px;
+  background-color: #eb1f40;
+  text-transform: uppercase;
+  font-size: 0.7vw;
+  line-height: 1.25;
+  text-align: center;
+  color: #fff;
+  padding: 10px 15px;
+  margin-right: 5%;
+  float: right;
+  font-weight: bold;
+  border: none;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 768px) {
+  .elements__card {
+    background-color: #fff;
+    padding-left: 0;
+    min-width: 320px; 
+    height: 150px;
+    padding-right: 10px;
+    border-bottom: 1px solid rgb(216, 216, 216);
+  }
+
+  .elements__card-image {
+    width: 40%;
+  }
+
+  .elements__label {
+    width: 200px;
+  }
+
+  .elements__title {
+    font-size: 1rem;
+    color: #333;
+  }
+
+  .elements__subtitle {
+    font-size: .8rem;
+    color: rgb(168, 168, 168);
+  }
+
+  .elements__price {
+    font-size: 1rem;
+  }
+
+  .elements__ruble-icon {
+    width: 15%;
+  }
+
+  .elements__button {
+    font-size: .6rem;
+  }
+}

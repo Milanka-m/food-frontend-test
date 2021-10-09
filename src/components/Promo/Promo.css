@@ -1,0 +1,349 @@
+.promo {
+  margin: 0 auto; 
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  box-sizing: border-box;
+}
+
+.promo__mobile {
+  display: none;
+}
+
+.promo__container {
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: auto;
+}
+
+.promo__leaf-img {
+  position: absolute;
+  z-index: 20;
+  top: 15%;
+  left: 22%;
+}
+
+.promo__item {
+  position: relative;
+  height: 97%;
+  z-index: 4;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+.promo__item_color_blue {
+  background-color: #8ed8f7;
+}
+
+.promo__item_color_red {
+  background-color: #f32b2b;
+  z-index: 5;
+}
+
+.promo__sets-image {
+  width: 90%;
+  margin-top: -10%;
+  transition: margin-top 1s;
+}
+
+.promo__sets-image:hover {
+  margin-top: 0;
+}
+
+.promo__sets-title {
+  font-size: 3.5vw;
+  font-weight: bold;
+  margin: 0 0 0 15%;
+  color: #fff;
+  text-transform: uppercase;
+  position: absolute;
+  top: 72%;
+  left: 0;
+}
+
+.promo__rolls-sushi-link {
+  text-decoration: none;
+  margin: 0;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.promo__rolls-img {
+  width: 50%;
+  padding: 3% 0 0 0;
+  margin: 0 0 0 -10%;
+  transition: margin-left 1s;
+}
+
+.promo__rolls-img:hover {
+  margin-left: 0;
+}
+
+.promo__rolls-title {
+  font-size: 1.5vw;
+  font-weight: bold;
+  color: #fff;
+  text-transform: uppercase;
+  position: absolute;
+  top: 10%;
+  right: 20%;
+  margin: 0;
+}
+
+.promo__sushi-title {
+  font-size: 1.5vw;
+  font-weight: bold;
+  color: #fff;
+  text-transform: uppercase;
+  position: absolute;
+  top: 33%;
+  left: 20%;
+  margin: 0;
+}
+
+.promo__sushi-img {
+  width: 50%;
+  margin: -5% 0 0 70%;
+  transition: margin-left 1s;
+}
+
+.promo__sushi-img:hover {
+  margin-left: 60%;
+}
+
+.promo__fried-rolls-img {
+  width: 50%;
+  margin: -5% 0 0 -10%;
+  transition: margin-left 1s;
+}
+
+.promo__fried-rolls-img:hover {
+  margin-left: 5%;
+}
+
+.promo__fried-rolls-title {
+  width: 50px;
+  font-size: 1.2vw;
+  line-height: 1.5;
+  font-weight: bold;
+  color: #fff;
+  text-transform: uppercase;
+  position: absolute;
+  bottom: 32%;
+  right: 32%;
+  margin: 0;
+}
+
+.promo__baked-rolls-title {
+  width: 150px;
+  font-size: 1.2vw;
+  line-height: 1.5;
+  font-weight: bold;
+  color: #fff;
+  text-transform: uppercase;
+  text-align: right;
+  position: absolute;
+  bottom: 10%;
+  left: 8%;
+  margin: 0;
+}
+
+.promo__baked-rolls-img {
+  width: 50%;
+  margin: -5% 0 0 62%;
+  transition: margin-left 1s;
+}
+
+.promo__baked-rolls-img:hover {
+  margin-left: 50%;
+}
+
+.promo__pattern-img {
+  position: absolute;
+  left: -15%;
+  bottom: 4%;
+  width: 30%;
+  height: auto;
+}
+
+.promo__item_color_white {
+  background-color: #fff;
+}
+
+.promo__wok-link {
+  text-decoration: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.promo__wok-leaf-img {
+  width: 28%;
+}
+
+.promo__wok-leaf-description {
+  width: calc(100% - 80px);
+  margin-top: -10%;
+}
+
+.promo__wok-title {
+  margin: 0;
+  font-size: 3.5vw;
+  line-height: 1;
+  font-weight: bold;
+  color: #f32b2b;
+  text-transform: uppercase;
+}
+
+.promo__wok-subtitle {
+  font-size: 1vw;
+  font-weight: bold;
+  color: #f32b2b;
+  padding-top: 5px;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+.promo__wok-img {
+  width: 155%;
+  height: auto;
+  margin: -50% -30% 0 0;
+  transition: margin-left 1s;
+}
+
+.promo__wok-img:hover {
+  margin-left: 20%;
+}
+
+.promo__item_color_mix {
+  z-index: 6;
+  position: relative;
+}
+
+.promo__item-supy {
+  height: 50%;
+  background-color: #f32b2b;
+}
+
+.promo__item-supy-link {
+  display: flex;
+  text-decoration: none;
+  margin: 0;
+  flex-direction: column;
+  align-items: center;
+}
+
+.promo__category-supy-img {
+  width: 81%;
+  height: auto;
+  margin: -19.5% 0 0 0;
+  transform: rotate(-15deg);
+  transition: transform 1s;
+}
+
+.promo__sets-title_position {
+  margin-top: -58%;
+}
+
+.promo__item-supy-pattern {
+  margin: 30% 0 0 170%;
+}
+
+.promo__category-supy-img:hover {
+  transform: rotate(-40deg);
+}
+
+.promo__item-links {
+  background-color: #9fe48b;
+  height: 50%;
+  width: 100%;
+  position: absolute;
+  right: 0;
+  top: 50%;
+}
+
+.promo__item-tempura-link {
+  text-decoration: none;
+  margin: 0; 
+  display: flex; 
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.promo__tempura-img {
+  width: 40%;
+  margin: 8% 0 0 -10%;
+  height: auto;
+  transition: margin-left 1s;
+}
+
+.promo__tempura-img:hover {
+  margin-left: 5%;
+}
+
+.promo__tempura-title {
+  font-size: 1.8vw;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #f32b2b;
+  margin: 0;
+}
+
+.promo__tempura-title_position {
+  position: absolute;
+  top: 20%;
+  right: 8%;
+}
+
+.promo__item-napitki-link {
+  text-decoration: none;
+  margin: 0;
+  display: flex; 
+  justify-content: flex-start;
+  align-items: center;
+  position: relative;
+  height: 200px;
+}
+
+.promo__napitki-title_position {
+  position: absolute;
+  top: 10%;
+  left: 8%
+}
+
+.promo__napitki-img {
+  width: 45%;
+  margin: -8% 0 0 58%;
+  transition: margin-top 1s;
+}
+
+.promo__napitki-img:hover {
+  margin-top: -20%;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1200px) {
+  .promo__container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .promo__item {
+    height: 100%
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .promo__container {
+    display: none;
+  }
+
+  .promo__mobile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding: 20px 0;
+  }
+}

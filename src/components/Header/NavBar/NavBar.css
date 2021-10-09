@@ -1,0 +1,231 @@
+.header__burger-menu {
+  display: none;
+}
+
+#header__menu-toggle {
+  opacity: 0;
+}
+
+#header__menu-toggle:checked ~ .header__menu-btn > .header__span {
+  transform: rotate(45deg);
+} 
+
+#header__menu-toggle:checked ~ .header__menu-btn > .header__span::before {
+  top: 0;
+  transform: rotate(0);
+}
+
+#header__menu-toggle:checked ~ .header__menu-btn > .header__span::after {
+  top: 0;
+  transform: rotate(90deg);
+}
+
+#header__menu-toggle:checked ~ .header__menu-container {
+  visibility: visible;
+  right: 0;
+}
+
+.header__menu-btn {
+  display: flex; 
+  align-items: center;
+  position: relative;
+  width: 26px;
+  height: 23px;
+  cursor: pointer;
+  z-index: 22;
+  transition: opacity .4s;
+}
+
+.header__menu-btn > .header__span,
+.header__menu-btn > .header__span::before,
+.header__menu-btn > .header__span::after {
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 3px;
+  background-color: rgb(170, 170, 170);
+  transition-duration: .25s;
+}
+
+.header__menu-btn > .header__span::before {
+  content: '';
+  top: -8px;
+}
+
+.header__menu-btn > .header__span::after {
+  content: '';
+  top: 8px;
+}
+
+.header__menu-btn:hover {
+  opacity: .6;
+}
+
+.header__menu-container {
+  display: flex;
+  justify-content: flex-start;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: -100%;
+  position: fixed;
+  background-color: rgba(0, 0, 0, .2);
+  visibility: hidden;
+  transition: visibility 0s, opacity .5s linear;
+  z-index: 20;
+}
+
+.header__menu-box {
+  display: flex;
+  padding: 25px 0 15px;
+  flex-direction: column;
+  align-items: center;
+  width: 280px;
+  margin: 0;
+  list-style: none;
+  text-align: center;
+  background-color: #fff;
+}
+
+.header__heading {
+  list-style: none;
+  margin: 0;
+  padding-left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: calc(100% - 20px);
+  padding-bottom: 10px;
+  border-bottom: 1px solid rgb(187, 187, 187);
+}
+
+.header__menu-link-logo {
+  text-decoration: none;
+  margin: 0;
+}
+
+.header__icon-logo {
+  width: 60%;
+}
+
+.header__link-profile-mobile {
+  text-decoration: none;
+  margin: 0;
+  max-width: 200px;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(min-content, max-content));
+  grid-template-rows: auto;
+  gap: 5px;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: bold;
+  font-size: 1rem;
+  line-height: 1.53;
+  padding-right: 8px;
+  color: #999; 
+  transition: color .4s;
+}
+
+.header__icon-profile-mobile {
+  height: 13px;
+}
+
+.header__menu-nav-links {
+  width: calc(100% - 20px);
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 0 10px;
+  border-bottom: 1px solid rgb(187, 187, 187);
+}
+
+.header__menu-list {
+  list-style: none;
+  margin: 0;
+  padding-left: 0;
+  text-align: left;
+}
+
+.header__menu-item {
+  display: inline;
+  font-weight: normal;
+  font-size: 1.12rem;
+  line-height: 2.2;
+  text-decoration: none;
+  color: #666;
+}
+
+.header__menu-image {
+  margin-right: 5px;
+}
+
+.header__menu-company-list {
+  width: calc(100% - 20px);
+  list-style: none;
+  margin: 0;
+  padding-left: 0;
+  text-align: left;
+  padding: 10px 0 10px;
+  border-bottom: 1px solid rgb(187, 187, 187);
+}
+
+.header__menu-social-links {
+  list-style: none;
+  margin: 0;
+  padding-left: 0;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: calc(100% - 20px);
+  padding: 20px 0 20px;
+  border-bottom: 1px solid rgb(187, 187, 187);
+}
+
+.header__menu-social-link {
+  text-decoration: none;
+  margin: 0;
+}
+
+.header__menu-pay-links {
+  list-style: none;
+  margin: 0;
+  padding-left: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding-top: 20px;
+}
+
+.header__googleplay-icon {
+  width: 90%;
+}
+
+.header__appstore-icon {
+  width: 90%;
+}
+
+@media screen and (max-width: 768px) {
+  .header__burger-menu {
+    display: flex;
+    justify-content: center;
+  }
+
+  .header__menu-btn {
+    width: 22px;
+    height: 23px;
+  }
+
+  .header__menu-btn > .header__span,
+  .header__menu-btn > .header__span::before,
+  .header__menu-btn > .header__span::after {
+    height: 2.5px;
+}
+
+  .header__menu-btn > .header__span::before {
+    top: -7px;
+  }
+  
+  .header__menu-btn > .header__span::after {
+    top: 7px;
+  }
+} 

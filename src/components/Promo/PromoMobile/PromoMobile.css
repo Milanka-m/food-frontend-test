@@ -1,0 +1,21 @@
+.promo__mobile-link {
+  width: 100%;
+  display: grid;
+  place-items: center;
+  grid-template-columns: repeat(2, 1fr);
+  padding-bottom: 15px;
+  text-decoration: none;
+  margin: 0;
+}
+.promo__mobile-image {
+  width: 120px;
+  height: auto;
+}
+
+.promo__mobile-title {
+  width: 120px;
+  font-size: 1.2rem;
+  color: #333;
+  text-transform: uppercase;
+  text-align: left;
+}
