@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/food-frontend-test/static/css/main.cf159dff.chunk.css",
+    "main.css": "/food-frontend-test/static/css/main.4419f1b8.chunk.css",
     "main.js": "/food-frontend-test/static/js/main.1ecd41fe.chunk.js",
     "main.js.map": "/food-frontend-test/static/js/main.1ecd41fe.chunk.js.map",
     "runtime-main.js": "/food-frontend-test/static/js/runtime-main.ea810292.js",
@@ -10,7 +10,7 @@
     "static/js/3.27fc370d.chunk.js": "/food-frontend-test/static/js/3.27fc370d.chunk.js",
     "static/js/3.27fc370d.chunk.js.map": "/food-frontend-test/static/js/3.27fc370d.chunk.js.map",
     "index.html": "/food-frontend-test/index.html",
-    "static/css/main.cf159dff.chunk.css.map": "/food-frontend-test/static/css/main.cf159dff.chunk.css.map",
+    "static/css/main.4419f1b8.chunk.css.map": "/food-frontend-test/static/css/main.4419f1b8.chunk.css.map",
     "static/js/2.ffb43b14.chunk.js.LICENSE.txt": "/food-frontend-test/static/js/2.ffb43b14.chunk.js.LICENSE.txt",
     "static/media/index.css": "/food-frontend-test/static/media/Gilroy-Regular.f6c9931f.woff2",
     "static/media/arrow-icon.4b4882ce.svg": "/food-frontend-test/static/media/arrow-icon.4b4882ce.svg",
@@ -48,7 +48,7 @@
   "entrypoints": [
     "static/js/runtime-main.ea810292.js",
     "static/js/2.ffb43b14.chunk.js",
-    "static/css/main.cf159dff.chunk.css",
+    "static/css/main.4419f1b8.chunk.css",
     "static/js/main.1ecd41fe.chunk.js"
   ]
 }
