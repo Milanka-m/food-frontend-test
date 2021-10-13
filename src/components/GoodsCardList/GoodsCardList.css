@@ -1,7 +1,6 @@
 .elements {
   width: 100%;
   margin: 0 auto; 
-  margin-bottom: 20px;
 }
 
 .elements__categorie {
@@ -9,6 +8,7 @@
 }
 
 .elements__container {
+  max-height: 82vh;
   list-style: none;
   padding-left: 0;
   margin: 0;
@@ -16,12 +16,21 @@
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: auto;
   gap: 12px;
+  overflow-y: auto;
+  scrollbar-width: none;
+  box-sizing: border-box;
+ 
 }
+
+.elements__container::-webkit-scrollbar {
+  display: none;
+} 
 
 @media screen and (max-width: 768px) {
   .elements__container {
     grid-template-columns: 1fr;
     gap: 0;
+    max-height: 100vh;
   }
 
   .elements__categorie {

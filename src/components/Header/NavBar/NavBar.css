@@ -85,7 +85,12 @@
   list-style: none;
   text-align: center;
   background-color: #fff;
-  overflow-y: scroll;
+  overflow-y: auto;
+  scrollbar-width: none;
+}
+
+.header__menu-box::-webkit-scrollbar {
+  display: none;
 }
 
 .header__heading {
